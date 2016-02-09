@@ -3,4 +3,7 @@ var Songs = Backbone.Collection.extend({
 
   model: SongModel
 
+
 });
+
+console.log(Songs);

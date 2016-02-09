@@ -2,13 +2,25 @@
 var SongQueue = Songs.extend({
 
   initialize: function(){
-    // if(){
-      this.playFirst();
-    // }
+    this.get('enqueue', this.Songdata, this);
+  //   this.on("enqueue", function(){
+  //     if(this.length === 1){
+  //       this.playFirst();
+  //     }
+  //   }, this);
   },
+  // this.on("ended", this.dequeue, this);
+
 
   playFirst: function(){
-    // this.play();
-  }
+    // this.at(0).play(this);
+    
+  },
+
+
+
+
 
 });
+
+//console.log(SongQueue.prototype);
