@@ -4,6 +4,8 @@ var AppModel = Backbone.Model.extend({
   initialize: function(params){
     this.set('currentSong', new SongModel());
     this.set('songQueue', new SongQueue());
+    //this.set('library', new LibraryView());
+   
     /* Note that 'this' is passed as the third argument. That third argument is
     the context. The 'play' callback function will always be bound to that context we pass in.
     In the current example, we're binding the value of the keyword this to the App. That is helpful because otherwise
